@@ -10,7 +10,7 @@ namespace GlobanetTest.FacebookApi.Model
     public class Comment : FacebookModelBase
     {
         [JsonProperty(PropertyName = "created_time")]
-        public string CreatedTime { get; set; }
+        public DateTime CreatedTime { get; set; }
 
         [JsonProperty(PropertyName = "like_count")]
         public int? LikeCount { get; set; }

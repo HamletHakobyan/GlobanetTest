@@ -31,7 +31,7 @@ namespace GlobanetTest.App
             var connector = new FacebookConnector(clientId, clientSecret);
             var postList = await connector.GetPostsByPageIdAsync(pageId);
             var posts = postList.Data;
-            if (!posts.Any())
+            if (posts == null || ! posts.Any())
             {
                 return;
             }
